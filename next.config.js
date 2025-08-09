@@ -8,6 +8,9 @@ checkEnvVariables()
 const nextConfig = {
   output: "standalone",
   reactStrictMode: true,
+  env: {
+    BACKEND_URL: process.env.BACKEND_URL,
+  },
   logging: {
     fetches: {
       fullUrl: true,
