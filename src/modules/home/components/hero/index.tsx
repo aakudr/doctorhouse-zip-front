@@ -1,4 +1,4 @@
-import { Github } from "@medusajs/icons"
+import { ArrowRight } from "@medusajs/icons"
 import { Button, Heading } from "@medusajs/ui"
 
 const Hero = () => {
@@ -10,11 +10,11 @@ const Hero = () => {
             level="h1"
             className="text-3xl leading-10 text-ui-fg-base font-normal"
           >
-            Ecommerce Starter Template
+            Поиск по модели
           </Heading>
           <Heading
             level="h2"
-            className="text-3xl leading-10 text-ui-fg-subtle font-normal"
+            className="hidden text-3xl leading-10 text-ui-fg-subtle font-normal"
           >
             Powered by Medusa and Next.js
           </Heading>
@@ -24,8 +24,8 @@ const Hero = () => {
           target="_blank"
         >
           <Button variant="secondary">
-            View on GitHub
-            <Github />
+            <span className="txt-compact-small">Искать</span>
+            <ArrowRight />
           </Button>
         </a>
       </div>
