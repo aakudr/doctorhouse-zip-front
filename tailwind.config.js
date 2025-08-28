@@ -12,6 +12,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        "dh-lg": "0 10px 30px rgba(15,23,36,0.15)",
+        "dh-soft": "0 6px 18px rgba(15,23,36,0.08)",
+      },
       transitionProperty: {
         width: "width margin",
         height: "height",
@@ -34,6 +38,10 @@ module.exports = {
           80: "#1F2937",
           90: "#111827",
         },
+        "dh-yellow": "#FFF7D6", // лёгкий жёлтый фон
+        "dh-yellow-600": "#F6D86A", // акцентный жёлтый
+        "dh-red": "#E63946", // основной красный акцент
+        "dh-dark": "#0F1724", // тёмный для текста
       },
       borderRadius: {
         none: "0px",
@@ -59,6 +67,8 @@ module.exports = {
         "3xl": "2rem",
       },
       fontFamily: {
+        heading: ['"Playfair Display"', "serif"],
+        ui: ["Inter", "sans-serif"],
         sans: [
           "Inter",
           "-apple-system",

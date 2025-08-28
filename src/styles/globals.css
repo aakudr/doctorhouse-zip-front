@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700;900&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -109,4 +110,30 @@
   .text-3xl-semi {
     @apply text-[32px] leading-[44px] font-semibold;
   }
+}
+
+/* Базовые стили */
+:root {
+  --dh-bg: #fffdf6;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-dh-yellow text-dh-dark font-ui;
+  background-color: var(--dh-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Небольшие утилиты */
+.h-font {
+  font-family: theme("fontFamily.heading");
+}
+.ui-font {
+  font-family: theme("fontFamily.ui");
 }
